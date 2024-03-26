@@ -12,6 +12,6 @@ print(f"b is {b}")
 # run the code and see.
 
 # Was it what you expected?
-
+  #20
 # Try to puzzle it out, and then move on to
 # 020_state_tables.py
