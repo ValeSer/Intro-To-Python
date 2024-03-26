@@ -21,11 +21,11 @@ my_name = 'Kay'
 
 # Try out creating a string with your name in it:
 
-your_name = ???
+your_name = 'Valeria'
 print(your_name)
 
 # @TASK: Check your work by running this file with:
-# python 022_strings.py
+# python3 022_strings.py
 
 # As you may have worked out, the `print(string)` function
 # prints a string to the shell so you can see it.
