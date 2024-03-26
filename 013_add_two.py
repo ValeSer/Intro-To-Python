@@ -11,14 +11,15 @@ from lib.helpers import check_that_these_are_equal
 # * Returns the result
 
 # YOUR FUNCTION GOES BELOW THIS LINE
-
+def add_two(num):
+  return num + 2
 
 
 # YOUR FUNCTION GOES ABOVE THIS LINE
 
 # @TASK: To check your work, run this in the shell:
 
-#   python 013_add_two.py
+#   python3 013_add_two.py
 
 # This will run the test at the bottom of this file.
 
