@@ -21,7 +21,7 @@ print(f"The string is {length} characters long")
 # @TASK: Try it out yourself by changing the string "Hello!"
 # above, and then running this code with:
 #
-#   python 024_string_operations.py
+#   python3 024_string_operations.py
 #
 # You'll see some other test output at the bottom. You can
 # ignore this until later in the exercise.
@@ -42,7 +42,7 @@ old_string = "Hello, YOUR_NAME!"
 new_string = old_string.replace("YOUR_NAME", "Kay")
 
 # Uncomment this next line to see the result
-# print(new_string)
+print(new_string)
 
 # You'll notice here that the function is coming in a
 # different place. Let's compare `len` and `replace`:
@@ -79,8 +79,7 @@ print("Function: uppercase")
 # Search for 'python make string uppercase'
 
 def make_uppercase(string):
-  # Return the string in uppercase
-  pass
+  return string.upper()
 
 check_that_these_are_equal(
   make_uppercase("hello"), "HELLO")
@@ -96,7 +95,7 @@ print("Function: lowercase")
 # Search for 'python make string lowercase'
 
 def make_lowercase(string):
-  # Return the string in lowercase
+  return string.lower()
   pass
 
 check_that_these_are_equal(
@@ -113,9 +112,7 @@ print("Function: strip_whitespace")
 # Search for 'python remove whitespace from string'
 
 def strip_whitespace(string):
-  # Return the string with any whitespace removed from
-  # the start and end
-  pass
+  return string.strip()
 
 check_that_these_are_equal(
   strip_whitespace("hello "), "hello")
