@@ -29,7 +29,7 @@ added = 2 + 3
 #
 # Or do we multiply 3 * 4 to get 12, then add 2 to get 14?
 #
-# @TASK: You can find out by running `python` in your
+# @TASK: You can find out by running `python3` in your
 # shell and typing that code into it. You'll see
 # something like this:
 #
@@ -46,14 +46,14 @@ added = 2 + 3
 # So we get 14! Python executes the multiplication first,
 # and then the addition. We can control this using brackets.
 #
-# @TASK: Try this using `python` in the shell:
+# @TASK: Try this using `python3` in the shell:
 
 (2 + 3) * 4
 
 # As you can see, we can use brackets to control the order
 # the expressions are evaluated.
 
-# That handy "`python` in the shell" thing is called the
+# That handy "`python3` in the shell" thing is called the
 # Python REPL. REPL stands for Read, Evaluate, and Print
 # Loop. It reads the code you type in, evaluates the
 # expression, prints the result, and then does that forever
@@ -82,7 +82,7 @@ add_one(4) * 3      # Evaluates to 15
 
 # @TASK: Try those expressions yourself. Run:
 #
-#   python -i 017_expressions.py
+#   python3 -i 017_expressions.py
 #
 # And then type in some of the above expressions.
 #
@@ -101,7 +101,7 @@ add_one(add_one(add_one(add_one(add_one(add_one(1))))))
 
 # EXPRESSIONS PLAYGROUND BEGINS
 
-
+print(add_one(add_one(5)*add_one(10)) ** 0.5 // 1)
 
 # EXPRESSIONS PLAYGROUND ENDS
 
