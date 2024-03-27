@@ -87,7 +87,7 @@ print("")
 print("Function: count_items_in_list")
 
 def count_items_in_list(the_list, item):
-  return len(the_list) - 1
+  return the_list.count(item)
 
 # Whereas here you'll need to return the result of the
 # function you call, not the list.
