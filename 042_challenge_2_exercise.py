@@ -41,11 +41,14 @@ def play_game():
     # We then need to convert it to a number using `int`
     row = int(input("Enter a row: "))
     column = int(input("Enter a column: "))
-    board = make_move(board, row, column, player)
-    if player == "X":
-      player = "O"
-    else:
-      player = "X"
+    if is_valid_move(board, row, column):
+      board = make_move(board, row, column, player)
+      if player == "X":
+        player = "O"
+      else:
+        player = "X"
+    else: 
+      print('Invalid move')
   print(print_board(board))
   print("Game over!")
 
@@ -56,7 +59,12 @@ def print_board(board):
   grid = "\n".join(formatted_rows)
   return grid
 
+def is_valid_move(board, row, column):
+  return row >= 0 and row < 3 and column >= 0 and column < 3 and board[row][column] == '.'
+    
+
 def make_move(board, row, column, player):
+
   board[row][column] = player
   return board
 
