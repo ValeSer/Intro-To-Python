@@ -12,7 +12,7 @@ from lib.helpers import check_that_these_are_equal
 
 # YOUR FUNCTION GOES BELOW THIS LINE
 def add_two(num):
-  return num + 2
+  return 0 if type(num) is not int else num + 2
 
 
 # YOUR FUNCTION GOES ABOVE THIS LINE
