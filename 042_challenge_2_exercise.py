@@ -64,7 +64,6 @@ def is_valid_move(board, row, column):
     
 
 def make_move(board, row, column, player):
-
   board[row][column] = player
   return board
 
@@ -105,7 +104,14 @@ groups_to_check = [
   [(0, 2), (1, 1), (2, 0)]
 ]
 
+def is_board_full(board):
+  for row in board:
+    for cell in row:
+      if cell == '.': return False 
+  return True
+
 def is_game_over(board):
+  
   # We go through our groups
   for group in groups_to_check:
     # If any of them are empty, they're clearly not a
@@ -114,7 +120,9 @@ def is_game_over(board):
       if are_all_cells_the_same(board, group[0], group[1], group[2]):
         return True # We found a winning row!
         # Note that return also stops the function
+    
   return False # If we get here, we didn't find a winning row
+
 
 # And test it out:
 
