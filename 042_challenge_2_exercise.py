@@ -120,7 +120,7 @@ def is_game_over(board):
       if are_all_cells_the_same(board, group[0], group[1], group[2]):
         return True # We found a winning row!
         # Note that return also stops the function
-    
+  if is_board_full(board): return True 
   return False # If we get here, we didn't find a winning row
 
 
